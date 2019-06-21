@@ -8,7 +8,7 @@ export default function Polls(props) {
   return (
     <Row>
       <Col xs={12}>
-        <h2>Latest Thoughts</h2>
+        <h2>Latest Polls</h2>
       </Col>
       {props.polls &&
         props.polls.map(poll => (
