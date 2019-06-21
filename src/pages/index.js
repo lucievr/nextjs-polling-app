@@ -3,15 +3,12 @@ import styled from "styled-components";
 
 const Rocket = styled.div`
   text-align: center;
-  img {
-    width: 630px;
-  }
 `;
 
 function Index() {
   return (
     <Rocket>
-      <img src="https://media.giphy.com/media/QbumCX9HFFDQA/giphy.gif" />
+      <h2>Next.js authentication and polling app</h2>
     </Rocket>
   );
 }
