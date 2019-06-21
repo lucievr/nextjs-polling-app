@@ -1,16 +1,24 @@
 // ./src/pages/index.js
-import styled from "styled-components";
+// import styled from "styled-components";
+import Container from "react-bootstrap/Container";
+import fetch from "isomorphic-fetch";
+import Polls from "../components/Polls";
 
-const Rocket = styled.div`
-  text-align: center;
-`;
 
-function Index() {
+function Index(props) {
   return (
-    <Rocket>
-      <h2>Next.js authentication and polling app</h2>
-    </Rocket>
+    <Container>
+      <Polls polls={props.polls} />
+    </Container>
   );
 }
+
+Index.getInitialProps = async ({ req }) => {
+  const baseURL = req ? `${req.protocol}://${req.get("Host")}` : "";
+  const res = await fetch(`${baseURL}/api/polls`);
+  return {
+    polls: await res.json()
+  };
+};
 
 export default Index;
