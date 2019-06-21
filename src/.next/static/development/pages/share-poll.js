@@ -11085,7 +11085,7 @@ function SharePoll() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!****************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fshare-poll&absolutePagePath=C%3A%5CWeb-Dev%5Creact%5Cnextjs-polling-app%5Csrc%5Cpages%5Cshare-poll.js ***!
   \****************************************************************************************************************************************************/
@@ -11108,5 +11108,5 @@ module.exports = dll_eca3f212c83fe644b694;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=share-poll.js.map

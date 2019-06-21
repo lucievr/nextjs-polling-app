@@ -20,6 +20,9 @@ export default function AppNavbar({ user }) {
           <Nav className="mr-auto">
             {user && (
               <>
+              <Link href="/">
+                  <a className="nav-link">Polls Overview</a>
+                </Link>
                 <Link href="/share-poll">
                   <a className="nav-link">New Poll</a>
                 </Link>
