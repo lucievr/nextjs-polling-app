@@ -4,7 +4,7 @@ require("dotenv").config();
 const express = require("express");
 const http = require("http");
 const next = require("next");
-const thoughtsAPI = require("./thoughts-api");
+const pollsAPI = require("./polls-api");
 
 const dev = process.env.NODE_ENV !== "production";
 const app = next({
@@ -16,7 +16,7 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
-  server.use(thoughtsAPI);
+  server.use(pollsAPI);
 
   // handling everything else with Next.js
   server.get("*", handle);
