@@ -8,8 +8,8 @@ const router = express.Router();
 router.use(bodyParser.json());
 
 const polls = [
-  { _id: 123, message: "I love pepperoni pizza!", author: "unknown" },
-  { _id: 456, message: "I'm watching Netflix.", author: "unknown" }
+  { _id: 123, message: "Coca-cola, Pepsi or Kofola?", author: "unknown" },
+  { _id: 456, message: "What's your favourite programming language?", author: "unknown" }
 ];
 
 router.get("/api/polls", (req, res) => {
